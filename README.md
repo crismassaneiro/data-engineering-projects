@@ -1,7 +1,7 @@
 # projeto-de
 --------------------------------------------------------------------------------
 
-1 - Escolher um API para puxar dados:
+1 - Escolher uma API para puxar dados:
 
 Usaremos a API da Open Weather Map:  https://openweathermap.org/guide
 
