@@ -34,7 +34,7 @@ Em resumo, os endpoints são como portas de entrada para acessar informações o
 
 
 
---------------------------------------------
+-------------------------------------------------------------------------------
 - Escreveria uma aplicação Python para extrair dados incrementais dos endpoints escolhidos.
 - Persistiria os dados em formato json em um data lake, por exemplo s3 na AWS.
 - Escreveria uma aplicação para transformar os dados
