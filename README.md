@@ -1,4 +1,4 @@
-Repositório dedicado aos meuS projetos pessoais de Integração de Dados
+Repositório dedicado aos meus projetos pessoais de Integração de Dados
 ----------------------
 Estruturação
 
