@@ -40,7 +40,7 @@ class ApiDataSaver():
         file_name = f'weather_data_{dia_da_execucao}.json'
         s3.put_object(Bucket=bucket_name, Key=directory_path + file_name, Body=weather_json_string)
         print(f'Arquivo salvo em: {bucket_name}/{directory_path}{file_name}')
-
+        
 # Exemplo de uso
 api_data_saver = ApiDataSaver()
 api_data_saver.saving_at_s3()
