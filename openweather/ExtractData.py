@@ -2,7 +2,7 @@ import boto3
 import pandas as pd
 import awswrangler as wr
 
-class ExtractData:
+class ExtractData():
 
     def extract_data(self, profile_name):
         try:
@@ -20,8 +20,7 @@ class ExtractData:
             return None
 
 if __name__ == "__main__":
-    # Crie uma instância da sua classe e forneça o nome do perfil como uma string
     extract = ExtractData()
     profile_name = 'CRISTIAN_AWS'
     df = extract.extract_data(profile_name=profile_name)
-    # Agora você pode usar o DataFrame df conforme necessário
+
