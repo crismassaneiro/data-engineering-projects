@@ -30,5 +30,4 @@ if __name__ == "__main__":
     extract_instance = ExtractData()
     profile_name = 'CRISTIAN_AWS'
     df_raw = extract_instance.extract_data(profile_name=profile_name)
-    #transform_instance = TransformData()
     df_transformed = TransformData.transform_data(df_raw)
