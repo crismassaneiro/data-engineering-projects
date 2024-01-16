@@ -4,9 +4,49 @@ from datetime import datetime
 
 from TransformData import TransformData
 
+"""
+SaveTransformedData Module
+
+This module defines a class, SaveTransformedData, which is responsible for saving transformed data to an AWS S3 bucket.
+It uses the Boto3 library for AWS interaction and Pandas for handling data.
+
+Usage:
+    - Instantiate the TransformData class to get the transformed data.
+    - Call the 'catuabinha' method of SaveTransformedData to save the transformed data to the specified S3 bucket.
+
+Note:
+    - Before running this code, ensure that the necessary AWS credentials are properly configured.
+"""
+
 class SaveTransformedData():
-        
+
+    """
+    SaveTransformedData Module
+    
+    This module defines a class, SaveTransformedData, which is responsible for saving transformed data to an AWS S3 bucket.
+    It uses the Boto3 library for AWS interaction and Pandas for handling data.
+
+    Usage:
+        - Instantiate the TransformData class to get the transformed data.
+        - Call the 'catuabinha' method of SaveTransformedData to save the transformed data to the specified S3 bucket.
+
+    Note:
+        - Before running this code, ensure that the necessary AWS credentials are properly configured.
+    """
+
     def catuabinha(df):
+
+        """
+        catuabinha Method
+
+        Saves the provided DataFrame to a Parquet file and uploads it to an S3 bucket.
+
+        Parameters:
+            - df (pd.DataFrame): Transformed data to be saved.
+
+        Returns:
+            - None
+        """
 
         profile_name = 'CRISTIAN_AWS'
 
