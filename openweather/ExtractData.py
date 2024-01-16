@@ -3,8 +3,33 @@ import pandas as pd
 import awswrangler as wr
 
 class ExtractData():
+    
+    """
+    ExtractData Class
+
+    A class for extracting data from an AWS S3 bucket using AWS Glue DataBrew and Wrangler.
+
+    Methods:
+        - extract_data(profile_name): Retrieves data from the specified S3 bucket.
+
+    Attributes:
+        - None
+    """
 
     def extract_data(self, profile_name):
+
+        """
+        extract_data Method
+
+        Retrieves data from the specified S3 bucket using AWS Glue DataBrew and Wrangler.
+
+        Parameters:
+            - profile_name (str): AWS profile name.
+
+        Returns:
+            - pd.DataFrame: Extracted data in DataFrame format.
+        """
+         
         try:
             s3 = boto3.session.Session(profile_name=profile_name)
             bucket_name = 'data-integration-projects/openweather-data-lake/raw-data'

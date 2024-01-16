@@ -5,7 +5,32 @@ from ExtractData import ExtractData
 
 class TransformData():
 
+    """
+    TransformData Class
+
+    A class for transforming raw weather data obtained from the OpenWeather API.
+
+    Methods:
+        - transform_data(df): Applies transformations to the raw weather data.
+
+    Attributes:
+        - None
+    """
+
     def transform_data(df):
+
+        """
+        transform_data Method
+
+        Applies transformations to the raw weather data.
+
+        Parameters:
+            - df (pd.DataFrame): Raw weather data.
+
+        Returns:
+            - pd.DataFrame: Transformed weather data.
+        """
+        
         df['lon'] = df['coord'].apply(lambda x: x['lon'])
         df['lat'] = df['coord'].apply(lambda x: x['lat'])
         df['clouds_description'] = df['weather'].apply(lambda x: x[0]['description'] if x and isinstance(x, list) and 'description' in x[0] else None)
