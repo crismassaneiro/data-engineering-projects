@@ -1,4 +1,4 @@
-Repositório dedicado aos meus projetos pessoais de Integração de Dados
+Repositório dedicado aos meus projetos pessoais de Data Engineering
 ----------------------
 
 Cada projeto está dentro de uma PASTA com o nome da API que foi utilizada
