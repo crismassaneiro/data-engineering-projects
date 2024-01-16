@@ -5,9 +5,7 @@ ex: Open Weather = openweather
 
 ##### obs: Todos possuem um READ ME, explicando tudo o que ocorre no projeto. Cada projeto é original e não se baseia em cursos ou materiais preexistentes. Todos foram desenvolvidos com base no meu conhecimento, visando aprimorar minhas habilidades.
 
-____
-
-Lista de Projetos
+## Lista de Projetos
 
 * openweather
 
